@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Tudo para o bem-estar do seu pet. Produtos selecionados, carinho em cada detalhe e praticidade para você.">
+  <title>Pata & Cia — Cuidado que faz bem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">🐾 Frete grátis em pedidos acima de R$ 199 <span>— carinho que chega até você</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Pata e Cia início"><span class="brand-mark">✳</span><span>PATA<span class="brand-amp">&</span>CIA</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#colecao">Produtos</a><a href="#sobre">Nossa essência</a><a href="#depoimentos">Quem ama, indica</a><a href="#duvidas">Dúvidas</a>
+    </nav>
+    <button class="cart-button" id="cart-open" aria-label="Abrir carrinho">Sacola <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span></span> PARA QUEM FAZ PARTE DA FAMÍLIA</span>
+        <h1>Mais cuidado.<br><em>Mais rabinhos</em><br>abanando.</h1>
+        <p>Produtos escolhidos com carinho para deixar a rotina do seu melhor amigo mais feliz, saudável e cheia de momentos bons.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#colecao">Descobrir produtos <span>↗</span></a><a class="text-link" href="#sobre">Conheça a Pata & Cia</a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>🐶</span><span>🐱</span><span>🐾</span></div><div><strong>Amor em cada escolha</strong><small>Uma seleção feita pensando neles.</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=88" alt="Cachorro feliz olhando para a câmera">
+        <div class="hero-sticker"><span>♥</span><strong>Feito com<br>amor pet</strong></div>
+        <div class="hero-caption"><span>01 / 04</span><span>O amor mora nos detalhes.</span></div>
+      </div>
+      <span class="hero-doodle">✳</span>
+    </section>
+
+    <section class="benefit-strip" aria-label="Nossos diferenciais">
+      <div><span>♡</span><p><strong>Curadoria especial</strong><small>Escolhas feitas com carinho</small></p></div>
+      <div><span>♧</span><p><strong>Bem-estar em primeiro lugar</strong><small>Conforto para todas as fases</small></p></div>
+      <div><span>↗</span><p><strong>Compra descomplicada</strong><small>Praticidade do começo ao fim</small></p></div>
+    </section>
+
+    <section class="section collection" id="colecao">
+      <div class="section-heading"><div><span class="eyebrow">UM MUNDO DE CUIDADO</span><h2>Encontre o novo<br><em>favorito</em> dele.</h2></div><p>Pequenos cuidados transformam o dia. Explore nossa seleção para cães e gatos.</p></div>
+      <div class="category-pills" role="group" aria-label="Filtrar produtos">
+        <button class="filter-pill active" data-filter="todos">Todos</button><button class="filter-pill" data-filter="passeio">Passeio</button><button class="filter-pill" data-filter="conforto">Conforto</button><button class="filter-pill" data-filter="brinquedos">Brinquedos</button><button class="filter-pill" data-filter="alimentacao">Alimentação</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="passeio"><div class="product-image"><span class="product-tag">MAIS AMADO</span><img src="https://images.unsplash.com/photo-1601758123927-1966a7e1b6e5?auto=format&fit=crop&w=800&q=85" alt="Cachorro usando acessório de passeio"><button class="quick-add" data-product="Coleira passeio" data-price="59.90">+ Adicionar</button></div><div class="product-info"><div><h3>Coleira passeio</h3><p>Conforto em cada aventura</p></div><strong>R$ 59,90</strong></div></article>
+        <article class="product-card" data-category="conforto"><div class="product-image"><span class="product-tag soft">CONFORTO</span><img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=800&q=85" alt="Cachorro descansando confortavelmente"><button class="quick-add" data-product="Caminha aconchego" data-price="149.90">+ Adicionar</button></div><div class="product-info"><div><h3>Caminha aconchego</h3><p>O cantinho preferido dele</p></div><strong>R$ 149,90</strong></div></article>
+        <article class="product-card" data-category="brinquedos"><div class="product-image"><span class="product-tag soft">DIVERSÃO</span><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=800&q=85" alt="Cachorro brincando ao ar livre"><button class="quick-add" data-product="Kit brincadeira" data-price="39.90">+ Adicionar</button></div><div class="product-info"><div><h3>Kit brincadeira</h3><p>Mais diversão todos os dias</p></div><strong>R$ 39,90</strong></div></article>
+        <article class="product-card" data-category="alimentacao"><div class="product-image"><span class="product-tag">ROTINA LEVE</span><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=800&q=85" alt="Pet recebendo alimentação"><button class="quick-add" data-product="Comedouro moderno" data-price="69.90">+ Adicionar</button></div><div class="product-info"><div><h3>Comedouro moderno</h3><p>Praticidade na hora da refeição</p></div><strong>R$ 69,90</strong></div></article>
+      </div>
+      <p class="catalog-note">* Produtos, imagens e preços são demonstrativos e podem ser substituídos pelos itens reais da sua loja.</p>
+    </section>
+
+    <section class="story" id="sobre">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1200&q=88" alt="Cachorro aproveitando um momento ao ar livre"><span class="image-note">AMOR DE VERDADE<br>SE VÊ NOS CUIDADOS.</span></div>
+      <div class="story-copy"><span class="eyebrow">NOSSA ESSÊNCIA</span><h2>Eles não são<br>apenas pets.<br><em>São casa.</em></h2><p>A Pata & Cia nasceu de uma ideia simples: nossos companheiros merecem o melhor. Por isso, reunimos produtos que valorizam conforto, diversão e bem-estar — sempre com carinho em cada detalhe.</p><a class="button button-outline" href="#colecao">Escolher com carinho <span>↗</span></a></div>
+    </section>
+
+    <section class="quote-section" id="depoimentos"><span class="eyebrow">CARINHO QUE SE COMPARTILHA</span><h2>Quem ama, <em>indica.</em></h2><div class="quote-card"><div class="stars">★★★★★</div><blockquote>“É tão bom encontrar coisas pensadas para o bem-estar deles. Cada detalhe faz diferença na rotina!”</blockquote><div class="quote-author"><span>🐕</span><div><strong>Cliente Pata & Cia</strong><small>Depoimento ilustrativo</small></div></div></div></section>
+
+    <section class="newsletter"><div><span class="eyebrow">BILHETINHOS PET</span><h2>Novidades fofas<br>no seu e-mail.</h2><p>Receba dicas, novidades e ofertas especiais para seu melhor amigo.</p></div><form id="newsletter-form"><label for="email">Seu melhor e-mail</label><div class="email-field"><input id="email" type="email" placeholder="voce@email.com" required><button type="submit" aria-label="Cadastrar e-mail">↗</button></div><small id="newsletter-message">Ao cadastrar, você concorda em receber nossas novidades.</small></form></section>
+
+    <section class="faq section" id="duvidas"><div class="section-heading"><div><span class="eyebrow">PRECISA DE AJUDA?</span><h2>Dúvidas de quem<br><em>cuida.</em></h2></div><p>Separamos algumas respostas para deixar sua experiência mais simples.</p></div><div class="faq-list">
+      <details><summary>Como faço para comprar? <span>＋</span></summary><p>Adicione os produtos à sacola e avance para revisar seu pedido. A finalização de compra precisa ser conectada ao canal de vendas da loja.</p></details>
+      <details><summary>Quais formas de pagamento são aceitas? <span>＋</span></summary><p>As formas de pagamento serão informadas na etapa de checkout, após a integração com o meio de pagamento escolhido.</p></details>
+      <details><summary>Como funciona a entrega? <span>＋</span></summary><p>Prazo e valor de entrega devem ser calculados conforme o CEP e a política logística da sua loja.</p></details>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-light" href="#"><span class="brand-mark">✳</span><span>PATA<span class="brand-amp">&</span>CIA</span></a><p>Feito com carinho para quem faz parte da família. 🐾</p><div><a href="#colecao">Produtos</a><a href="#sobre">Nossa essência</a><a href="#duvidas">Ajuda</a></div><small>© <span id="year"></span> Pata & Cia. Conteúdo demonstrativo.</small></footer>
+
+  <div class="cart-overlay" id="cart-overlay"></div><aside class="cart-drawer" id="cart-drawer" aria-label="Sua sacola" aria-hidden="true"><div class="cart-head"><h2>Sua sacola <span id="drawer-count">(0)</span></h2><button id="cart-close" aria-label="Fechar sacola">×</button></div><div class="cart-items" id="cart-items"><p class="empty-cart">Sua sacola está esperando por carinho. 🐾</p></div><div class="cart-footer"><div><span>Subtotal</span><strong id="cart-total">R$ 0,00</strong></div><button class="button button-dark checkout-button" id="checkout-button">Continuar pedido <span>↗</span></button><small>Checkout demonstrativo — configure seu meio de pagamento para receber pedidos.</small></div></aside>
+</body>
+</html>
